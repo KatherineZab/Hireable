@@ -56,7 +56,6 @@ The primary goal of Hireable is to create a supportive community where junior jo
 </p>
 
 <p align="center">
-  <img src="./Images/GroupExample.jpg" width="70%">
   <br>
   <em>🛡️ <b>Group Admin View</b> – approve or reject join requests directly as a group administrator</em>
     <img src="./Images/GroupExample.jpg" width="70%">
