@@ -186,9 +186,6 @@ projFile/
 - `CLOUDINARY_API_KEY` - Your Cloudinary API key
 - `CLOUDINARY_API_SECRET` - Your Cloudinary API secret
 
-## 📸 Screenshots
-
-_(Add your screenshots here to showcase the application features)_
 
 ## 🔌 API Endpoints
 
@@ -202,15 +199,6 @@ The backend provides the following main API routes:
 - `/api/upload` - File uploads
 - `/api` - Profile photo uploads
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📝 License
-
-This project is open source and available for use.
-
-## 🙏 Acknowledgments
 
 Built with ❤️ for junior job seekers to connect, learn, and grow together.
 
