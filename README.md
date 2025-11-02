@@ -39,7 +39,7 @@ The primary goal of Hireable is to create a supportive community where junior jo
 - **bcryptjs** - Password hashing
 - **Multer** - File upload handling
 
-## 📸 Screenshots
+## 📸 A grasp from the app
 
 <p align="center">
   <img src="./Images/Home.jpg" width="70%">
