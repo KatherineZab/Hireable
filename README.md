@@ -148,33 +148,6 @@ npm start
 ```
 The frontend will run on `http://localhost:3000` and open automatically in your browser.
 
-## 📁 Project Structure
-
-```
-projFile/
-├── Final-react-project/          # React Frontend
-│   ├── public/                   # Static files
-│   ├── src/
-│   │   ├── components/           # React components
-│   │   │   ├── GroupsPage/       # Groups functionality
-│   │   │   ├── Home/             # Home feed and posts
-│   │   │   ├── HeaderBar/        # Navigation bar
-│   │   │   ├── messages/         # Messaging components
-│   │   │   └── profile/          # User profile components
-│   │   ├── App.js               # Main app component
-│   │   └── socketConnection.js  # Socket.io client setup
-│   └── package.json
-│
-└── Final-react-project-Back/     # Node.js Backend
-    ├── config/                   # Configuration files
-    │   ├── db.js                # MongoDB connection
-    │   ├── cloudinary.js        # Cloudinary setup
-    │   └── socketConfig.js      # Socket.io server setup
-    ├── controllers/             # Route controllers
-    ├── models/                  # Mongoose models
-    ├── routes/                  # Express routes
-    ├── app.js                   # Main server file
-    └── package.json
 ```
 
 ## 🔑 Environment Variables
