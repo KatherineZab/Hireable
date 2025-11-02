@@ -39,6 +39,51 @@ The primary goal of Hireable is to create a supportive community where junior jo
 - **bcryptjs** - Password hashing
 - **Multer** - File upload handling
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="./Images/Home.jpg" width="70%">
+  <br>
+  <em>🏠 <b>Home Feed</b> – browse posts, interact with the community, and view daily questions</em>
+</p>
+
+<p align="center">
+  <img src="./Images/GroupPage.jpg" width="70%">
+  <br>
+  <em>👥 <b>Groups Page</b> – discover, join, and create groups by interest or profession</em>
+</p>
+
+<p align="center">
+  <img src="./Images/GroupExample.jpg" width="70%">
+  <br>
+  <em>🛡️ <b>Group Admin View</b> – approve or reject join requests directly as a group administrator</em>
+</p>
+
+<p align="center">
+  <img src="./Images/MessegesPage.jpg" width="70%">
+  <br>
+  <em>💬 <b>Messages Page</b> – real-time private chat between users powered by Socket.io</em>
+</p>
+
+<p align="center">
+  <img src="./Images/Profile.jpg" width="70%">
+  <br>
+  <em>🙋‍♀️ <b>User Profile</b> – personal page with posts, followers, and connections</em>
+</p>
+
+<p align="center">
+  <img src="./Images/Profile Settings.jpg" width="70%">
+  <br>
+  <em>⚙️ <b>Profile Settings</b> – update user details, upload images, and manage privacy</em>
+</p>
+
+<p align="center">
+  <img src="./Images/ProfileConnections.jpg" width="70%">
+  <br>
+  <em>🤝 <b>Connections View</b> – explore and manage your professional connections within the platform</em>
+</p>
+
+
 ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
