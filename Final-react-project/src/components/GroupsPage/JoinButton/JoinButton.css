@@ -1,0 +1,30 @@
+/* Green pill-shaped join buttons */
+.join-group-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 25px; /* Full pill shape */
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 100px;
+}
+
+.join-group-btn:hover:not(:disabled) {
+    background: #218838;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3);
+}
+
+.join-group-btn:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.join-group-btn:active {
+    transform: translateY(0);
+}

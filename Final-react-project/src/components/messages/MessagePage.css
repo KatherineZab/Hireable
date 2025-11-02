@@ -1,0 +1,36 @@
+.messages-container {
+  margin-top: 0px;
+  padding: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.messages-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.no-messages {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+body {
+  background: #f7f8fa;
+}
+
+.messages-page {
+  display: flex;
+  height: calc(100vh - 70px);
+  min-height: 600px;
+  justify-content: center;
+  align-items: stretch;
+  gap: 32px;
+  background: #f7f8fa;
+  padding: 20px 0;
+}
+

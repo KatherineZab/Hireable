@@ -1,0 +1,50 @@
+.groups-button {
+  background: white;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  padding: 8px 16px;
+  height: 35px;
+  border-radius: 25px; /* Perfect pill shape */
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.button-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.button-text {
+  font-size: 10px;
+  font-weight: 500;
+  color: #666;
+  line-height: 1;
+}
+
+.groups-button:hover {
+  background-color: #f8f9fa;
+  border-color: #007bff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.groups-button:hover .button-text {
+  color: #007bff;
+}
+
+.groups-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

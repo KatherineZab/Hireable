@@ -1,0 +1,47 @@
+.privacy-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border: 2px solid #e9ecef;
+}
+
+.toggle-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.toggle-option:hover {
+    background: rgba(0, 123, 255, 0.05);
+}
+
+.toggle-option input[type="radio"] {
+    margin-top: 2px;
+    width: 18px;
+    height: 18px;
+    accent-color: #007bff;
+}
+
+.toggle-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.toggle-text strong {
+    font-size: 16px;
+    color: #333;
+}
+
+.toggle-text small {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+}

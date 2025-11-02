@@ -1,0 +1,15 @@
+.no-posts-box {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.no-posts-icon {
+  font-size: 40px;
+  color: #999;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,129 @@
+/* Grid view group card styling */
+.group-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s ease;
+    min-height: 160px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.group-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Privacy icon styling for grid cards */
+.group-card .privacy-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 16px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.group-card h4 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.3;
+    padding-top: 8px; /* Add space for privacy icon */
+}
+
+.group-card p {
+    flex: 1;
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.group-card span {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.group-card-join-btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+/* List view group card styling */
+.group-result-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: box-shadow 0.2s ease;
+    min-height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.group-result-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Privacy icon styling for list cards */
+.group-result-card .privacy-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 14px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.group-info {
+    flex: 1;
+    margin-right: 16px;
+    padding-right: 8px; /* Add space for privacy icon */
+}
+
+.group-info h4 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.group-info p {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.member-count {
+    font-size: 12px;
+    color: #888;
+}

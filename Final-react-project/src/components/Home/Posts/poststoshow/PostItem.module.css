@@ -1,0 +1,325 @@
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border: 1px solid #e4e6eb;
+  transition: box-shadow 0.2s, border 0.2s;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  width: 600px;
+  margin: 0 auto 24px auto;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+}
+.listItem:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  border: 1px solid #ccd0d5;
+}
+.profilePicture {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 18px;
+  border: 2px solid #e4e6eb;
+}
+
+.groupPicture {
+  width: 25px;
+  height: 25px;
+  border-radius: 25%;
+  object-fit: cover;
+  margin-right: 18px;
+  border: 2px solid #e4e6eb;
+}
+.itemContent {
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+.userName {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 17px;
+  color: #050505;
+  text-align: left;
+  width: 100%;
+}
+.postContent {
+  font-size: 15px;
+  color: #1c1e21;
+  word-break: break-word;
+  line-height: 1.6;
+}
+.postDate {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 6px;
+  margin-top: -2px;
+}
+.mediaThumbnailsRow {
+  display: flex;
+  overflow-x: auto;
+  max-width: 336px;
+  gap: 8px;
+  padding-bottom: 8px;
+}
+.mediaThumb {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+}
+.mediaThumb img,
+.mediaThumb video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.postImage {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 18px;
+  border: 1px solid #e4e6eb;
+}
+.linkstyle{
+  text-decoration: none;
+}
+.groupNameLink{
+    display: inline;               /* Enables flexbox layout */
+    align-items: center;         /* Vertically center items */
+    margin-bottom: 15px;
+    transition: transform 0.2s;  /* Smooth hover effect */
+  
+    color: inherit; 
+}
+.groupNameLink:hover{
+    transform: translateY(-2px);
+    color: rgb(188, 157, 218);
+    border-radius: 8px;
+}
+.postLikes {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #888;
+}
+.inlineCommentsPanel {
+  position: absolute;
+  top: 20px;
+  left: 100%;
+  width: 400px;
+  max-width: 90vw;
+  min-height: 120px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  border-radius: 12px;
+  padding: 24px 20px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #e4e6eb;
+}
+.inlineCommentsPanel h3 {
+  margin-top: 0;
+}
+@media (max-width: 900px) {
+  .inlineCommentsPanel {
+    position: static;
+    width: 100%;
+    max-width: 100vw;
+    margin-top: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+} 
+
+.actionRow {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.actionButton {
+  background: #f5f6fa;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+  outline: none;
+}
+
+.actionButton:hover {
+  background: #e6f0ff;
+  color: #1976d2;
+  box-shadow: none;
+}
+
+.actionButtonDelete {
+  background: #f5f6fa;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+  outline: none;
+}
+
+.actionButtonDelete:hover {
+  background: #e6f0ff;
+  color: #1976d2;
+  box-shadow: none;
+}
+
+.actionButtonEdit {
+  background: #f5f6fa;
+  border: none;
+  border-radius: 20px;
+  padding: 0.65rem 1.2rem;
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+  margin-right: 80px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+  outline: none;
+}
+
+.actionButtonEdit:hover {
+  background: #e6f0ff;
+  color: #1976d2;
+}
+
+
+
+.liked {
+  color: #1976d2;
+  font-weight: bold;
+  background: #e3f2fd;
+}
+
+@media (max-width: 600px) {
+  .listItem {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+  .actionRow {
+    gap: 0.5rem;
+    margin-top: 0.7rem;
+  }
+  .actionButton {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Slight elevation for post */
+.listItem {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+  transition: box-shadow 0.2s;
+}
+
+.listItem:hover {
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.10);
+} 
+
+.homePostItem {
+  width: 600px;
+  margin: 0 auto 24px auto;
+}
+
+.profilePostItem {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto 24px auto;
+}
+
+.groupPostItem {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 24px auto;
+} 
+
+.deleteButtonContainer {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 2;
+} 
+
+.likersModalContent {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 4px 24px rgba(25,118,210,0.15);
+  min-width: 300px;
+  max-width: 90vw;
+}
+.likerItem {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.likerAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+}
+.likerNameLink {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.likerNameLink:hover {
+  color: #0d47a1;
+  text-decoration: underline;
+}
+.closeModalButton {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.4rem 1.2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.closeModalButton:hover {
+  background: #1565c0;
+}
+.likersCount {
+  color: #1976d2;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  text-decoration: underline;
+} 

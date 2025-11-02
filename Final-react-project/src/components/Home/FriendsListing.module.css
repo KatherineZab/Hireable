@@ -1,0 +1,29 @@
+.item{
+    display: flex;               
+    align-items: center;        
+    margin-bottom: 15px;
+    transition: transform 0.2s;  
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.item:hover{
+    transform: translateY(-2px);
+    background-color: rgb(214, 189, 238);
+    border-radius: 8px;
+}
+
+.imageStyle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+  border: 2px solid #e4e6eb;
+}
+
+.friendsListRTL {
+  width: 100%;
+  max-height: 270px;
+  overflow-y: auto;
+} 

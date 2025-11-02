@@ -1,0 +1,40 @@
+.selectFeedContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+
+.selectFeedButton {
+  padding: 10px 18px;
+  border: none;
+  margin-left: 15px;
+  border-radius: 22px;
+  background: #c2e0ff;
+  color: #0073b1;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(100, 100, 150, 0.10);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  min-width: 160px;
+  max-width: 160;
+  white-space: nowrap;
+}
+
+.selectFeedButton:hover, .selectFeedButton:focus {
+  background: #4fc3e5;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(100, 100, 150, 0.18);
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .selectFeedContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

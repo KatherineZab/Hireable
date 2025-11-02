@@ -1,0 +1,294 @@
+/* Add these styles to your existing GroupHeader.css */
+
+.group-header {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+    border-left: 4px solid #8b5cf6; /* Purple accent line */
+}
+
+/* Group Image Section */
+.group-image-section {
+    flex-shrink: 0;
+    position: relative;
+}
+
+.group-image-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 3px solid #8b5cf6; /* Purple border */
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2); /* Purple shadow */
+}
+
+.group-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.group-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 50%, #c084fc 100%); /* Purple gradient */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+.image-upload-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(139, 92, 246, 0.8); /* Purple overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.group-image-container:hover .image-upload-overlay {
+    opacity: 1;
+}
+
+.upload-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.upload-icon {
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.upload-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-spinner {
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.upload-error-message {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ef4444;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-top: 8px;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+    z-index: 10;
+}
+
+/* Group Info Section */
+.group-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.group-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.group-title h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1c1e21;
+    margin: 0;
+}
+
+.private-badge {
+    background: linear-gradient(135deg, #8b5cf6, #a855f7); /* Purple gradient badge */
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(139, 92, 246, 0.3);
+}
+
+.group-description {
+    font-size: 16px;
+    color: #65676b;
+    margin: 0 0 12px 0;
+    line-height: 1.4;
+}
+
+.group-stats {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.member-count, .created-date, .creator-info {
+    font-size: 14px;
+    color: #65676b;
+    font-weight: 500;
+}
+
+.member-count {
+    color: #8b5cf6; /* Purple for member count */
+    font-weight: 600;
+}
+
+/* Actions Section */
+.group-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.settings-button {
+    background: linear-gradient(135deg, #8b5cf6, #a855f7); /* Purple gradient */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+}
+
+.settings-button:hover {
+    background: linear-gradient(135deg, #7c3aed, #9333ea);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+}
+
+.join-button {
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.join-button:hover:not(:disabled) {
+    background: #059669;
+    transform: translateY(-1px);
+}
+
+.request-button {
+    background: #f59e0b;
+}
+
+.request-button:hover:not(:disabled) {
+    background: #d97706;
+}
+
+.leave-button {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.leave-button:hover:not(:disabled) {
+    background: #dc2626;
+    transform: translateY(-1px);
+}
+
+.pending-request {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.pending-text {
+    font-size: 14px;
+    color: #8b5cf6; /* Purple for pending text */
+    font-weight: 600;
+}
+
+.cancel-request-button {
+    background: #6b7280;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+.cancel-request-button:hover:not(:disabled) {
+    background: #4b5563;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .group-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .group-image-section {
+        align-self: center;
+    }
+    
+    .group-actions {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .group-title h1 {
+        font-size: 24px;
+    }
+
+}

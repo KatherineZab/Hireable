@@ -1,0 +1,25 @@
+.mediaThumbnailsRow {
+  display: flex;
+  overflow-x: auto;
+  max-width: 432px; 
+  gap: 8px;
+  padding-bottom: 8px;
+}
+.mediaThumb {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+}
+.mediaThumb img,
+.mediaThumb video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 

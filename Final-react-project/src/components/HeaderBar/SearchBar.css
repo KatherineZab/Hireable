@@ -1,0 +1,168 @@
+.searchbar-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 350px;
+}
+.searchbar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+
+.search-bar-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar-icon {
+  position: absolute;
+  left: 12px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.search-bar-icon::before {
+  content: "🔍";
+  font-size: 16px;
+  filter: none;
+  color: initial;
+}
+
+.search-bar-input {
+  width: 100%;
+  padding: 14px 14px 14px 40px;
+  height: 36px;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  outline: none;
+  font-size: 16px;
+  background: #fafafa;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.search-bar-input:focus {
+  border: 1.5px solid #84b9f1;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  transform: scale(1.01);
+}
+
+.searchbar-dropdown-content {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  padding: 0;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.searchbar-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.searchbar-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.searchbar-dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+.searchbar-dropdown-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #eee;
+}
+
+.searchbar-dropdown-name {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.searchbar-dropdown-email {
+  font-size: 12px;
+  color: #666;
+}
+
+.searchbar-dropdown-loading,
+.searchbar-dropdown-empty {
+  padding: 16px;
+  text-align: center;
+  color: #888;
+  font-size: 15px;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background-color: #e0f0ff;
+  color: #0073b1;
+  border: 1px solid #c2e0ff;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.filter-button:hover {
+  background-color: #459dd0;
+}
+
+/* ⭐ חדש: עוטף את כפתור הסינון וה־dropdown */
+.filter-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.filter-dropdown-overlay {
+  position: absolute;
+  top: 100%;          
+  left: 100%;          
+  width: 280px;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 12px;
+}
+
+/* קופסת הסינון */
+.filter-dropdown-container {
+  background-color: #c2e0ff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 12px;
+}
+
+/* קטגוריה אחת של סינון */
+.filter-category {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}

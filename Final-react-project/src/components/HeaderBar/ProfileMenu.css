@@ -1,0 +1,64 @@
+.profile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #eee;
+    background: #fff;
+    transition: all 0.2s ease; 
+}
+
+.profile-icon:hover,
+.profile-icon:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    transform: translateY(-1px);
+}
+
+.profile-icon:active {
+    transform: translateY(0);
+}
+
+.profile-menu.menu-open .profile-icon {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+
+.dropdown {
+    position: absolute;
+    top: 48px; 
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.dropdown a {
+    display: block;
+    padding: 8px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.dropdown a:hover {
+    background: #e0e0e0;
+}
+
+.dropdown hr {
+    margin: 4px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}

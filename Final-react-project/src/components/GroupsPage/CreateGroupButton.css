@@ -1,0 +1,35 @@
+.create-group-btn {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    margin-bottom: 24px;
+    outline: none;
+}
+
+.create-group-btn:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.create-group-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+.btn-icon {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+}

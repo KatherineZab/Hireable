@@ -1,0 +1,273 @@
+.panel {
+  background: #f9fafd;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-top: 1rem;
+  padding: 1rem 1.2rem 0.5rem 1.2rem;
+  max-height: 350px;
+  width: calc(100% - 100px);
+  overflow-y: auto;
+  transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+  animation: slideDown 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.commentsList {
+  margin-bottom: 1rem;
+}
+
+.commentBox {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(25,118,210,0.06);
+  margin-bottom: 0.7rem;
+  padding: 0.7rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.93rem;
+  color: #1976d2;
+  margin-bottom: 0.2rem;
+}
+
+.author {
+  font-weight: 600;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.commentText {
+  color: #222;
+  font-size: 1rem;
+  margin-top: 0.1rem;
+  word-break: break-word;
+}
+
+.inputArea {
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.textarea {
+  flex: 1;
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  resize: none;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(25,118,210,0.03);
+  transition: border 0.2s;
+}
+
+.textarea:focus {
+  border: 1.5px solid #1976d2;
+  outline: none;
+}
+
+.submitButton {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 0.6rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(25,118,210,0.08);
+  transition: background 0.2s;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #1565c0;
+}
+
+.submitButton:disabled {
+  background: #b3c6e6;
+  cursor: not-allowed;
+}
+
+.loading, .error, .noComments {
+  color: #888;
+  font-size: 1rem;
+  text-align: center;
+  margin: 1.2rem 0;
+}
+
+.commentActions {
+  display: flex;
+  align-items: center;
+  margin-top: 0.3rem;
+  gap: 0.7rem;
+}
+
+.commentLikeButton {
+  background: #f5f6fa;
+  border: none;
+  border-radius: 16px;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 2px rgba(25,118,210,0.03);
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.commentLikeButton:hover:not(:disabled) {
+  background: #e6f0ff;
+  color: #1976d2;
+}
+
+.commentLikeButton.liked {
+  color: #1976d2;
+  font-weight: bold;
+  background: #e3f2fd;
+}
+
+.editButton {
+  background: #e3f2fd;
+  color: #1976d2;
+  border: none;
+  border-radius: 12px;
+  padding: 0.3rem 0.8rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+.editButton:hover {
+  background: #bbdefb;
+}
+.deleteButton {
+  background: #ffebee;
+  color: #d32f2f;
+  border: none;
+  border-radius: 12px;
+  padding: 0.3rem 0.8rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+.deleteButton:hover {
+  background: #ffcdd2;
+}
+.loadMoreButton {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 0.6rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 1rem auto 0 auto;
+  display: block;
+  box-shadow: 0 1px 3px rgba(25,118,210,0.08);
+  transition: background 0.2s;
+}
+.loadMoreButton:hover {
+  background: #1565c0;
+}
+.likersModal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.likersModalContent {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 4px 24px rgba(25,118,210,0.15);
+  min-width: 300px;
+  max-width: 90vw;
+}
+.likerItem {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.likerAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+}
+.likerNameLink {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.likerNameLink:hover {
+  color: #0d47a1;
+  text-decoration: underline;
+}
+.closeModalButton {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.4rem 1.2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.closeModalButton:hover {
+  background: #1565c0;
+}
+.editArea {
+  margin-bottom: 0.5rem;
+}
+.likersCount {
+  color: #1976d2;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .panel {
+    padding: 0.7rem 0.5rem 0.3rem 0.5rem;
+    max-height: 220px;
+  }
+  .commentBox {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.95rem;
+  }
+  .inputArea {
+    gap: 0.4rem;
+  }
+  .textarea {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.7rem;
+  }
+  .submitButton {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
+  }
+} 

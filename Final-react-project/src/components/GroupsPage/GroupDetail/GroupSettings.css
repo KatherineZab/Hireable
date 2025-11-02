@@ -1,0 +1,64 @@
+.group-settings {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 24px;
+}
+
+.group-settings h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.setting-field {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-field label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.setting-field input,
+.setting-field textarea {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.setting-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.save-button {
+  background-color: #f0f0f0;
+  color: #000;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #ff4d4f;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #e0e0e0;
+}
+
+.delete-button:hover {
+  background-color: #d9363e;
+}

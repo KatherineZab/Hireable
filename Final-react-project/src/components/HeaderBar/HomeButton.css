@@ -1,0 +1,41 @@
+.home-button {
+  background: white;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  padding: 8px 16px; 
+  height: 35px; 
+  border-radius: 25px; 
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-width: 70px; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+
+.button-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+  line-height: 1;
+}
+
+.home-button:hover {
+  background-color: #f8f9fa;
+  border-color: #007bff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.home-button:hover .button-text {
+  color: #007bff;
+}
+
+.home-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

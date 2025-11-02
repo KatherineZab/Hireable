@@ -1,0 +1,31 @@
+.created-groups-btn {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #666;
+    width: 100%;
+    outline: none;
+}
+
+.created-groups-btn:hover {
+    background: #e9ecef;
+    border-color: #ddd;
+}
+
+.created-groups-btn.active {
+    background: #007bff;
+    border-color: #007bff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
+}
+
+.created-groups-btn.active:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+}

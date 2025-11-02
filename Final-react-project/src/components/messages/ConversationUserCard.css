@@ -1,0 +1,37 @@
+.conversation-user-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  position: relative;
+}
+.conversation-user-card:hover {
+  background: #f0f4fa;
+}
+.conversation-user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.conversation-user-name {
+  font-weight: 500;
+  font-size: 16px;
+}
+.user-badge {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: red;
+  color: white;
+  font-size: 10px;
+  border-radius: 50%;
+  padding: 2px 6px;
+  min-width: 18px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 2;
+} 
