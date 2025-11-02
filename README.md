@@ -76,12 +76,6 @@ The primary goal of Hireable is to create a supportive community where junior jo
 
 </p>
 
-<p align="center">
-  <br>
-  <em>⚙️ <b>Profile Settings</b> – update user details, upload images, and manage privacy</em>
-    <img src="./Images/Profile Settings.jpg" width="70%">
-
-</p>
 
 
 
