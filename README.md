@@ -1,5 +1,11 @@
 # Hireable
 
+<p align="center">
+  <img src="./Images/Login.png" width="70%">
+  <br>
+</p>
+
+
 A social media platform designed for junior job seekers to connect, collaborate, and support each other. Hireable enables users to find project partners, seek advice from experienced seniors on the platform, and build a professional network.
 
 ## 🎯 Objective
