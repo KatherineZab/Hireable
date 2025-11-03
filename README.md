@@ -24,20 +24,18 @@ The primary goal of Hireable is to create a supportive community where junior jo
 ## 🛠️ Tech Stack
 
 ### Frontend
-- **React** - UI library
+- **React** 
 - **React Router** - Client-side routing
 - **Socket.io Client** - Real-time messaging
-- **Axios** - HTTP client
-- **CSS Modules** - Component styling
+
 
 ### Backend
-- **Node.js** - Runtime environment
-- **Express** - Web framework
-- **MongoDB** with **Mongoose** - Database
-- **Socket.io** - Real-time communication
-- **Cloudinary** - Image and media storage
-- **bcryptjs** - Password hashing
-- **Multer** - File upload handling
+- **Node.js**
+- **Express**
+- **MongoDB** with **Mongoose** 
+- **Socket.io** 
+- **Cloudinary**
+
 
 ## 📸 A grasp from the app
 
